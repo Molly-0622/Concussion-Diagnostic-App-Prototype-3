@@ -30,13 +30,32 @@ Not different pages
       <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
       <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
       
-      
-   <!--
-     <script>
+
      
-     /*put fuctions in here/*
+      <script>
+     	var c_count=0;
+     	//concussion variable that counts the number of yes answers to get a result
+     	
+     	function cAdd(){
+     		c_count=c_count+1;
+     	}//adds a count to the concussion as the user picks concussion option
+     	
+     	
+     	/*function result(){
+     		var resultText = document.getElementById("result");
+     		var cPercent=c_count/6*100;
+     		var coldPercent=cold_count/6*100;
+     		resultText.innerHTML="Probability it is allergies = " + allergyPercent + "%<br>Probability it is a cold = "+ coldPercent + "%";
+     	}//function calculates the allergy and cold percentage by dividing by the total questions and multiplying by 100
+     	*/
+     	function resetVars(){
+     		c_count=0;
+     		
+     	}//resets the variables to 0 so the use can take the quiz again
+     
      </script>
-    /--> 
+    
+
     
   </head>
  
