@@ -52,6 +52,16 @@ Not different pages
      		c_count=0;
      		
      	}//resets the variables to 0 so the use can take the quiz again
+	      
+	      
+	      
+	 document.getElementById("form1").onsubmit=function() {
+		 variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+		 sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+		 con = parseInt(document.quertySelector('input[name = "con"]:checked').value);
+		 ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+		 
+		 result = variable + sub + con + ifstate;
      
      </script>
     
@@ -94,6 +104,7 @@ Not different pages
 		<div data-role="content">
 					
 			
+			<form id="form1" action=" ">
 			<p class="question">1. Are you/have you been unconscious, confused, unable to wake up, or seizing at any point?</p>
 				<!--/ Question 1 --> 
 			<ul class="answers">
