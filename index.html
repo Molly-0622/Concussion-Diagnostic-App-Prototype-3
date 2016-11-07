@@ -61,18 +61,22 @@ Not different pages
 		 con = parseInt(document.quertySelector('input[name = "con"]:checked').value);
 		 ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
 		 
-		 result = variable + sub + con + ifstate;
+		 result1 = variable + sub + con + ifstate;
 		 
 		 document.getElementById("grade").innerHTML = results;
 		 
 		 return false;
 	 }
 	 
-	 if (result==yes)
+	 if (result1==yes)
 	 {
 		 cAdd();
 	 }
      
+	     function result(){
+     		
+     		resultText.innerHTML="Probability of concussion = " + c_count ;
+     	}
      </script>
     
 
@@ -267,6 +271,9 @@ Not different pages
 		<div data-role="content">
 			<p> Based on your answers, you most likely/ do not likely have a concussion (% chance you do).</p>		
 			
+			<a href="#result" onclick="result();" data-role="button">Click to show results</a>
+			<p id="result"></p>
+			<p>Thanks for using the app!</p>
 
 			
 			
