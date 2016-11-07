@@ -52,26 +52,16 @@ Not different pages
      		c_count=0;
      		
      	}//resets the variables to 0 so the use can take the quiz again
+	     
+	      type="radio"name="q1"value="a"id="q1a"><label for="q1a">Yes</label><br/>
 	      
-	      
-	      
-	 document.getElementById("form1").onsubmit=function() {
-		 variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
-		 sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
-		 con = parseInt(document.quertySelector('input[name = "con"]:checked').value);
-		 ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
-		 
-		 result1 = variable + sub + con + ifstate;
-		 
-		 document.getElementById("grade").innerHTML = results;
-		 
-		 return false;
-	 }
+	   if (type.equals"radio" && name.equals"q1" && value.equals"a")
+	      {
+		   cAdd();
+	      }
+	
 	 
-	 if (result1==yes)
-	 {
-		 cAdd();
-	 }
+	
      
 	     function result(){
      		
@@ -118,7 +108,7 @@ Not different pages
 		<div data-role="content">
 					
 			
-			<form id="form1" action=" ">
+			<form id="form1" action=" "
 			<p class="question">1. Are you/have you been unconscious, confused, unable to wake up, or seizing at any point?</p>
 				<!--/ Question 1 --> 
 			<ul class="answers">
@@ -126,7 +116,7 @@ Not different pages
 			<input type="radio"name="q1"value="b"id="q1b"><label for="q1b">No</label><br/>
 				<!--Answers to question 1 -->
 			</ul><!--end of question 1 -->
-				
+				>
 			
 			<p class="question">2. How did you obtain your head injury?</p>
 				<!--/ Question 2 --> 
