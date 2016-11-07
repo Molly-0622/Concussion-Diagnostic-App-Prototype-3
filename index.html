@@ -62,6 +62,16 @@ Not different pages
 		 ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
 		 
 		 result = variable + sub + con + ifstate;
+		 
+		 document.getElementById("grade").innerHTML = results;
+		 
+		 return false;
+	 }
+	 
+	 if (result==yes)
+	 {
+		 cAdd();
+	 }
      
      </script>
     
