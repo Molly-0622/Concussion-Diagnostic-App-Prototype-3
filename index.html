@@ -54,8 +54,15 @@ Not different pages
      		c_count=0;
      		
      	}//resets the variables to 0 so the use can take the quiz again
-	     
-	      type="radio"name="q1"value="a"id="q1a"><label for="q1a">Yes</label><br/>
+	  
+	function collect(){
+		
+		
+		
+	}
+		
+		
+	    
 	      
 	   if (type.equals"radio" && name.equals"q1" && value.equals"a")
 	      {
@@ -152,7 +159,7 @@ Not different pages
 		
 			<a href="#pageone" data-role="button">Back to page 1</a>	
 				<!--created a button to take them back to page 1-->
-			<a href="#pagethree" data-role="button">To page 3</a>	
+			<a href="#pagethree" onClick="collect()" data-role="button">To page 3</a>	
 				<!--created a button to take them back to page 1-->
 		</div><!-- /content -->
 	
