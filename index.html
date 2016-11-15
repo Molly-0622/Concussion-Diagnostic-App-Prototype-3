@@ -33,28 +33,26 @@ Not different pages
 
      
       <script>
+	      
+	var map = new Map();
+	      
+	      
+	function qAdd(question, value){
+		if (map.has(question))
+		{
+			if (value == "yes")
+		}
+	}
+	      
+	      
+	      
      	var c_count=0;
      	//concussion variable that counts the number of yes answers to get a result
      	
 	
-     	function cAdd(){
-		if (
-     		c_count=c_count+1;
-     	}//adds a count to the concussion as the user picks concussion option
      	
-     	
-     	/*function result(){
-     		var resultText = document.getElementById("result");
-     		var cPercent=c_count/6*100;
-     		var coldPercent=cold_count/6*100;
-     		resultText.innerHTML="Probability it is allergies = " + allergyPercent + "%<br>Probability it is a cold = "+ coldPercent + "%";
-     	}//function calculates the allergy and cold percentage by dividing by the total questions and multiplying by 100
-     	*/
-     	function resetVars(){
-     		c_count=0;
-     		
-     	}//resets the variables to 0 so the use can take the quiz again
-	  
+     
+		
 	function collect(){
 		
 		
@@ -64,11 +62,6 @@ Not different pages
 		
 	    
 	      
-	   if (type.equals"radio" && name.equals"q1" && value.equals"a")
-	      {
-		   cAdd();
-	      }
-	
 	 
 	
      
@@ -159,7 +152,7 @@ Not different pages
 		
 			<a href="#pageone" data-role="button">Back to page 1</a>	
 				<!--created a button to take them back to page 1-->
-			<a href="#pagethree" onClick="collect()" data-role="button">To page 3</a>	
+			<a href="#pagethree" data-role="button">To page 3</a>	
 				<!--created a button to take them back to page 1-->
 		</div><!-- /content -->
 	
